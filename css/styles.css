@@ -1,0 +1,108 @@
+body {
+    background-color: hsl(233, 47%, 7%);
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: "Inter", sans-serif;
+    font-size: 1.2vw;
+}
+
+h1 {
+    color: white;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+p {
+    line-height: 1;
+}
+
+h3 {
+    font-size: 5vw;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+
+
+.grid {
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    overflow: hidden;
+    margin: auto;
+    width: 80%;
+
+
+    position: absolute;
+    top: 20%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    aspect-ratio: 5 / 2;
+}
+
+
+.text-column {
+    margin: 10% 15% 15% 15%;
+}
+
+text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.main-text {
+    line-height: 1.5;
+}
+
+.insights {
+    color: hsl(277, 64%, 61%);
+}
+
+.main-img {
+    width: 100%;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    min-width: 100%;
+    margin-top: 15%;
+}
+
+.stat {
+    color: white;
+    font-weight: 700;
+    font-size: 2vw;
+}
+
+.label {
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+
+
+@media (max-width: 600px) {
+    body {text-align: center; font-size: 3vw;}
+    .grid {
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 35% 65%;
+        top: 0%;
+        aspect-ratio: 2 / 5;
+    }
+    .image-column {grid-row: 1;}
+    p {width: 96%;}
+    .stats-grid {
+        grid-template-columns: repeat(1,1fr);
+   
+    }
+    .stat {font-size: 5vw;}
+    .label {margin-bottom: 15%;}
+
+
+      
+    }
+    
